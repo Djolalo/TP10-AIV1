@@ -10,8 +10,8 @@ image_2 = cv2.imread('./Fichiers_utiles_TP10_2023/3classes_100_156_8bits.png', c
 def seuilOpti(img, parf, show = True):
     init = np.array(img)
     '''
-    On caste l'histo en entier pour éviter les erreurs d'arrondis, et on l'applatit.
-    Cela facilite les manipulations avec numpy. (l'histo rendu par openCV est un tableau 2d (peu pratique...))
+     On caste l'histo en entier pour éviter les erreurs d'arrondis, et on l'applatit.
+     Cela facilite les manipulations avec numpy. (l'histo rendu par openCV est un tableau 2d (peu pratique...))
     '''
     histo = cv2.calcHist([img], [0], None, [256], [0, 256]).flatten().astype(int) 
     if show: 
