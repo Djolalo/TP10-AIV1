@@ -22,8 +22,8 @@ def seuilOpti(img, parf):
 
         P2 = 1 - P1
         N2 = total - N1
-        noccu1=0 # nombre d'occurences pondérés par le niveau de gris dans omega1
-        noccu2 = 0 #nombre d'occurences pondérés par le niveau de gris dans omega2
+        noccu1=0 # nombre d'occurences pondéré par le niveau de gris dans omega1
+        noccu2 = 0 #nombre d'occurences pondéré par le niveau de gris dans omega2
         for i in range(256):
             if i < t1 :
                 noccu1 += histo[i] * i
